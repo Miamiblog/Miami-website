@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Showcase – Miami FX Dev Studio</title>
+  <meta name="description" content="Browse our web design, branding, and UI/UX portfolio. Discover bold, modern, and functional layouts from Miami FX.">
+  <meta name="keywords" content="Web Design, UI/UX, E-commerce, Dashboards, Mockups, Branding, Miami FX, Portfolio">
+  <meta name="author" content="Miami FX Dev Studio">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Designs – Miami FX Dev Studio">
+  <meta property="og:description" content="Explore stunning designs crafted by Miami FX — from mobile UIs to dashboard layouts.">
+  <meta property="og:image" content="Img/Miami-logo.png">
+  <meta property="og:url" content="https://miamifx.dev/designs.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet">
+  <style>
+    body { background: #270101; padding-top: 60px; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; }
+    header { padding: 60px 20px; background: linear-gradient(90deg, #e53935, #1e88e5); text-align: center; }
+    header h1 { font-size: 3rem; margin-bottom: .5rem; color: white; }
+    .gallery-grid { margin-top: 2rem; }
+    .design-item { padding: 0.5rem; }
+    .card.hoverable { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card.hoverable:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card-image img {
+      border-radius: 4px 4px 0 0;
+      object-fit: cover;
+      height: 200px;
+    }
+    .card-content {
+      background: #1e1e1e;
+      padding: 10px;
+    }
+    .card-content small {
+      color: white;
+    }
+    .tabs .tab a { color: white; }
+    .tabs .tab a.active { background: #e53935; color: white; }
+    .tabs .indicator { background-color: white; }
+    .year-section-toggle {
+    cursor: pointer;
+    background: #1e1e1e;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .year-section-toggle:hover {
+    background: #333;
+  }
+  .year-section[hidden] {
+    display: none;
+  }  
+</style>
+</head>
+<body>
+  <nav class="blue-grey darken-4">
+    <div class="nav-wrapper container">
+      <a href="home.html" class="brand-logo">MIAMI FX</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+      </ul>
+    </div>
+
+  <ul class="sidenav" id="mobile-menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+  </ul>
+ </nav>
+
+  <blockquote class="white-text" style="border-left: 5px solid #e53935;">
+    “Design isn’t decoration — it’s problem-solving made beautiful.” <br>
+    <small>— Miami FX Dev Studio</small>
+  </blockquote>
+
+
+  <header>
+    <h1>Our Designs</h1>
+    <p style="color:white">Clean. Bold. Professional Websites</p>
+    <p class="white-text flow-text" style="max-width: 800px; margin: 0 auto;">
+    Welcome to our visual archive — a curated gallery of standout projects crafted at <strong>Miami FX Dev Studio</strong>. 
+    From sleek e-commerce interfaces to bold branding visuals, every design reflects our obsession with clarity, creativity, and user-first thinking.
+    </p>
+  </header>
+
+  
+
+  <div class="white-text center-align" style="font-size: 0.9rem; margin-bottom: 1rem;">
+    <h5>Categories: E-Commerce • Dashboards • Branding • Mobile UI • UI/UX</h5>
+  </div>
+
+  <div class="container">
+    <ul class="tabs">
+      <li class="tab col s4"><a href="#" class="filter-tab active" data-category="all">All</a></li>
+      <li class="tab col s4"><a href="#" class="filter-tab" data-category="ecommerce">E-Commerce</a></li>
+      <li class="tab col s4"><a href="#" class="filter-tab" data-category="dashboards">Dashboards</a></li>
+      <li class="tab col s4"><a href="#" class="filter-tab" data-category="branding">Branding</a></li>
+      <li class="tab col s4"><a href="#" class="filter-tab" data-category="mobile-ui">Mobile UI</a></li>
+      <li class="tab col s4"><a href="#" class="filter-tab" data-category="uiux">UI/UX</a></li>
+    </ul>
+
+     
+    <p class="white-text" style="margin-top: 2rem;">Works completed in 2023</p>
+    <div class="year-section" id="year-2023">
+      <h5 class="white-text">2023 Designs</h5>
+      <div class="row gallery-grid">
+        <div class="col s12 m6 l4 design-item ecommerce branding year-2023">
+          <div class="card hoverable modal-trigger" data-title="Fashion Store Landing" data-img="Img/Landing-page(1).jpg" data-desc="Modern landing page for fashion ecommerce.">
+            <div class="card-image"><img src="Img/Landing-page(1).jpg" alt="Fashion Store Landing" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Figma, Photoshop</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item dashboards uiux year-2023">
+          <div class="card hoverable modal-trigger" data-title="Admin Interface" data-img="Img/Carding.jpg" data-desc="Lightweight admin dashboard UI.">
+            <div class="card-image"><img src="Img/Carding.jpg" alt="Admin Interface" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Adobe XD</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item mobile-ui uiux year-2023">
+          <div class="card hoverable modal-trigger" data-title="Design Interface" data-img="Img/Design.jpeg" data-desc="Lightweight Design UI.">
+            <div class="card-image"><img src="Img/Design.jpeg" alt="Design Interface" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> UI XD</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item dashboards branding year-2023">
+          <div class="card hoverable modal-trigger" data-title="Creative Clicks" data-img="Img/ebay.jpg" data-desc="Marketing dashboard layout.">
+            <div class="card-image"><img src="Img/ebay.jpg" alt="Creative Clicks" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Illustrator</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <p class="white-text" style="margin-top: 2rem;">Works completed in 2024</p>
+    <div class="year-section" id="year-2024">
+      <h5 class="white-text">2024 Designs</h5>
+      <div class="row gallery-grid">
+        <div class="col s12 m6 l4 design-item branding dashboards year-2024">
+          <div class="card hoverable modal-trigger" data-title="Digital Services Icon Set" data-img="Img/Digital.jpg" data-desc="Flat-style icons for digital services.">
+            <div class="card-image"><img src="Img/Digital.jpg" alt="Digital Services Icon Set" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Illustrator</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item branding dashboards year-2024">
+          <div class="card hoverable modal-trigger" data-title="Dashboard-mockup Set" data-img="Img/Dashboard-mockup.jpg" data-desc="Dashboard-mockup for tech-digital services.">
+            <div class="card-image"><img src="Img/Dashboard-mockup.jpg" alt="Dashboard-mockup Set" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Stack</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item mobile-ui branding year-2024">
+          <div class="card hoverable modal-trigger" data-title="Instagram Campaign UI" data-img="Img/instagram-post-interface.jpg" data-desc="Social promo layout for mobile.">
+            <div class="card-image"><img src="Img/instagram-post-interface.jpg" alt="Instagram Campaign UI" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Figma</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item ecommerce uiux year-2024">
+          <div class="card hoverable modal-trigger" data-title="Hotel Booking UI" data-img="Img/homepage-seen-computer-screen.jpg" data-desc="Responsive hotel interface.">
+            <div class="card-image"><img src="Img/homepage-seen-computer-screen.jpg" alt="Hotel Booking UI" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Webflow</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+    <p class="white-text" style="margin-top: 2rem;">Works completed in 2025</p>
+    <div class="year-section" id="year-2025">
+      <h5 class="white-text">2025 Designs</h5>
+      <div class="row gallery-grid">
+          <div class="col s12 m6 l4 design-item cv branding year-2025">
+          <div class="card hoverable modal-trigger" data-title="Modern Resume Design" data-img="Img/cv-resume-template.jpg" data-desc="A clean, colorful resume layout for developers or designers.">
+            <div class="card-image"><img src="Img/cv-resume-template.jpg" alt="Modern Resume Design" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Photoshop</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item dashboards uiux year-2025">
+          <div class="card hoverable modal-trigger" data-title="Dev Ops Workspace" data-img="Img/cyberattack-night.jpg" data-desc="Programming workflow layout with layered terminal UIs.">
+            <div class="card-image"><img src="Img/cyberattack-night.jpg" alt="Dev Ops Workspace" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Figma, VSCode</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item ecommerce mobile-ui year-2025">
+          <div class="card hoverable modal-trigger" data-title="Bifold Fashion Flyer" data-img="Img/bifold-flyer-mockup.jpg" data-desc="Stylish bifold flyer for fashion.">
+            <div class="card-image"><img src="Img/bifold-flyer-mockup.jpg" alt="Bifold Fashion Flyer" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Photoshop</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item dashboards uiux year-2025">
+          <div class="card hoverable modal-trigger" data-title="Global Dashboard" data-img="Img/Digital tablet.jpg" data-desc="Interactive global analytics panel.">
+            <div class="card-image"><img src="Img/Digital tablet.jpg" alt="Global Dashboard" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Figma</small></div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4 design-item branding year-2025">
+          <div class="card hoverable modal-trigger" data-title="Big Sale Alert" data-img="Img/Big-sale.jpg" data-desc="Cheerful bright banner for seasonal offers.">
+            <div class="card-image"><img src="Img/Big-sale.jpg" alt="Big Sale Alert" loading="lazy"></div>
+            <div class="card-content white-text"><small><strong>Client:</strong> Miami FX</small><br><small><strong>Tool:</strong> Illustrator</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+    </div>
+
+
+  <div id="designModal" class="modal">
+    <div class="modal-content">
+      <h4 id="modalTitle"></h4>
+      <img id="modalImg" src="" alt="Preview" class="responsive-img">
+      <p id="modalDesc"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div class="center-align white-text" style="margin: 4rem auto 2rem;">
+  <h5>Let’s Bring Your Ideas to Life</h5>
+  <p>Seen something you love? <a href="contact.html" class="red-text text-lighten-2">Get in touch</a> — let’s build something extraordinary together.</p>
+  </div>
+
+  <blockquote class="white-text" style="border-left: 5px solid #e53935;">
+    “Design isn’t decoration — it’s problem-solving made beautiful.” <br>
+    <small>— Miami FX Dev Studio</small>
+  </blockquote>
+
+  <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+<script>
+  document.querySelectorAll('.year-section').forEach(section => {
+    const year = section.id.replace('year-', '');
+    const toggle = document.createElement('div');
+    toggle.className = 'year-section-toggle white-text';
+    toggle.innerText = year + ' ▼';
+    toggle.addEventListener('click', () => {
+      section.hidden = !section.hidden;
+      toggle.innerText = year + (section.hidden ? ' ▶' : ' ▼');
+    });
+    section.before(toggle);
+  });
+</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+      M.Modal.init(document.querySelectorAll('.modal'));
+
+      const tabs = document.querySelectorAll('.filter-tab');
+      const items = document.querySelectorAll('.design-item');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', e => {
+          e.preventDefault();
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const category = tab.getAttribute('data-category');
+
+          items.forEach(item => {
+            item.style.display = (category === 'all' || item.classList.contains(category)) ? 'block' : 'none';
+          });
+        });
+      });
+
+      document.querySelectorAll('.modal-trigger').forEach(card => {
+        card.addEventListener('click', () => {
+          const title = card.getAttribute('data-title');
+          const img = card.getAttribute('data-img');
+          const desc = card.getAttribute('data-desc');
+          document.getElementById('modalTitle').textContent = title;
+          document.getElementById('modalImg').src = img;
+          document.getElementById('modalDesc').textContent = desc;
+          M.Modal.getInstance(document.getElementById('designModal')).open();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Miami Frontend Xperience Dev Studio Experts" />
+  <meta name="description" content="A showcase of web design and frontend development work by Miami FX Dev Studio." />
+  <meta name="keywords" content="Miami FX, frontend portfolio, UI/UX, web design, responsive layouts, ecommerce, branding, dashboards" />
+  <meta name="theme-color" content="#270101" />
+  <title>Portfolio | Miami FX Dev Studio</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet">
+  <style>
+    body { background: #270101; padding-top: 60px; color: #fff; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; }
+    header { padding: 60px 20px; background: linear-gradient(90deg, #e53935, #1e88e5); text-align: center; }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .portfolio-section { padding: 3rem 1rem; }
+    .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 8px; overflow: hidden; background: #1c1c1c; }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+    }
+    .card-image img {
+      height: 220px;
+      object-fit: cover;
+      filter: brightness(90%);
+      transition: filter 0.3s ease;
+    }
+    .card-image img:hover {
+      filter: brightness(105%);
+    }
+    .card-content {
+      padding: 1.2rem;
+    }
+    .btn-live {
+      margin-top: 0.5rem;
+      background-color: #1e88e5;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="blue-grey darken-4">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">MIAMI FX</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="designs.html">Designs</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+      </ul>
+    </div>
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="designs.html">Designs</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Our Portfolio</h1>
+    <p>Real results, crafted experiences, and UI that speaks your brand’s personality.</p>
+  </header>
+
+  <section class="portfolio-section container">
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card hoverable project-card">
+          <div class="card-image">
+            <img src="Img/original-Real-estate-UI.webp" alt="Real Estate UI" loading="lazy">
+             <a class="btn-floating halfway-fab waves-effect waves-light modal-trigger" href="#modal1">
+              <i class="material-icons">info</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Real Estate UI</span>
+            <p>Goal: Attract luxury buyers. Result: 2x conversion in property leads. Sophisticated branding meets seamless browsing.</p>
+            <a href="https://dribbble.com/search/Real-Estate-UI" class="btn btn-small btn-live waves-effect waves-light">Live Preview</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card hoverable project-card">
+          <div class="card-image">
+            <img src="Img/original-crypto.webp" alt="Crypto Dashboard" loading="lazy">
+            <a class="btn-floating halfway-fab waves-effect waves-light modal-trigger" href="#modal2">
+              <i class="material-icons">info</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Crypto Dashboard</span>
+            <p>Built for a fintech startup. Result: Increased investor trust with sleek visuals and real-time stats. Serious tech with smooth UX.</p>
+            <a href="https://dribbble.com/search/Crypto-Dashboard" class="btn btn-small btn-live waves-effect waves-light">Live Preview</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card hoverable project-card">
+          <div class="card-image">
+            <img src="Img/original-E-commerce-webpage.webp" alt="E-Commerce Platform" loading="lazy">
+            <a class="btn-floating halfway-fab waves-effect waves-light modal-trigger" href="#modal3">
+              <i class="material-icons">info</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">E-Commerce Platform</span>
+            <p>Goal: Streamline shopping for busy users. Clean layout, bold CTAs, mobile-first. Result: 30% boost in checkout rate.</p>
+            <a href="https://dribbble.com/search/ecommerce" class="btn btn-small btn-live waves-effect waves-light">Live Preview</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card hoverable project-card">
+          <div class="card-image">
+            <img src="Img/fashion-ad.webp" alt="Fashion Store" loading="lazy">
+            <a class="btn-floating halfway-fab waves-effect waves-light modal-trigger" href="#modal4">
+              <i class="material-icons">info</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Fashion Storefront</span>
+            <p>Trendy and minimal layout tailored for modern apparel brands.</p>
+            <a href="https://dribbble.com/search/fashion-store" class="btn btn-small btn-live waves-effect waves-light">Live Preview</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card hoverable project-card">
+          <div class="card-image">
+            <img src="Img/UI-UX Tracking Dashboard.webp" alt="Crypto Analytics" loading="lazy">
+            <a class="btn-floating halfway-fab waves-effect waves-light modal-trigger" href="#modal5">
+              <i class="material-icons">info</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Analytics UI</span>
+            <p>Insight-driven visuals built for transparent crypto reporting.</p>
+            <a href="https://dribbble.com/search/analytics-ui" class="btn btn-small btn-live waves-effect waves-light">Live Preview</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>Real Estate UI</h5>
+      <img src="Img/original-Real-estate.webp" alt="Real Estate Full Preview" class="responsive-img" loading="lazy">
+      <p class="black-text">This responsive UI was built for a real estate agency focused on showcasing high-end homes with map integration, photo sliders, and smart filtering options. Built with HTML5, CSS Grid, and minimal JS.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h5>Crypto Dashboard</h5>
+      <img src="Img/crypto-board.webp" alt="Crypto-Dashboard Preview" class="responsive-img" loading="lazy">
+      <p>A powerful UI built for a crypto app with live data charts, transaction tables, dark mode, and wallet integration. Technologies used: React, Chart.js, Tailwind CSS.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h5>E-Commerce Platform</h5>
+      <img src="Img/Economic-business.webp" alt="E-Commerce Platform Preview" class="responsive-img" loading="lazy">
+      <p>This platform supports multiple product types, cart logic, search and filtering, and seamless checkout UI. Designed in Figma and built using HTML/CSS/JS with Materialize.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Close</a>
+    </div>
+  </div>
+
+  
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <h5>Fashion Storefront</h5>
+      <img src="Img/fashion-store.webp" alt="Full Fashion Storefront" class="responsive-img" loading="lazy">
+      <p>A bold and minimalist frontend built for a boutique clothing retailer. Includes hover-based navigation and mobile-first grid layout.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Close</a>
+    </div>
+  </div>
+
+
+  <div id="modal5" class="modal">
+  <div class="modal-content">
+    <h5>Analytics UI</h5>
+    <img src="Img/Analysis-ui.webp" alt="Analytics Full Preview" class="responsive-img" loading="lazy">
+    <p>Designed for a tech startup, this dashboard provides real-time data visualization, compact widgets, and clean typography for decision-making.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close btn-flat">Close</a>
+  </div>
+</div>
+
+
+
+    <section  class="section container center" data-aos="fade-up">
+    <h4>Contact Me</h4><br>
+    <a href="https://wa.me/2347035157216" class="btn-large red accent-4 waves-effect waves-light">Let's Talk Website →</a>
+   
+  </section>
+
+    
+
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container center">
+      <p>© 2025 MIAMI FX DEV STUDIO</p>
+    </div>
+  </footer>
+
+  <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      M.AutoInit();
+    });
+  </script>
+</body>
+</html>

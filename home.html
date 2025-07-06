@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Miami FX Dev Studio – Home</title>
+  <meta http-equiv="refresh" content="30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="We bring ideas to life through creative, functional web design—fast, responsive, results-driven websites and also crafting clean, bold, professional websites that stand out">
+  <meta name="keywords" content="Website, Branding, UI/UX, E-commerce, Business Websites, Mockup, Portfolio Mockup, Page Design, Promo Flyer, Landing Page, Web Design, Dashboards, Admin panels">
+  <meta name="author" content="Miami FX Dev Studio">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Miami FX Dev Studio – Home">
+  <meta property="og:description" content="We design clean, bold, professional websites that stand out and perform.">
+  <meta property="og:image" content="/Img/og-image.jpg">
+  <meta property="og:url" content="https://miamifx.dev/home.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .parallax-container {
+      height: 600px;
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+    }
+
+    .section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .stat h4 {
+      font-size: 2.8rem;
+      color: #e53935;
+    }
+
+    .cta {
+      background: #e53935;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h4 {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #263238;
+      padding: 30px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff5252;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue-grey darken-4">
+    <div class="nav-wrapper container">
+      <a href="#home" class="brand-logo">MIAMI FX</a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="designs.html">Designs</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+      </ul>
+    </div>
+ 
+
+  <!-- Sidenav -->
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="designs.html">Designs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="testimonial.html">Testimonials</a></li>
+  </ul>
+   </nav>
+
+  <!-- Hero Section -->
+  <div id="home" class="parallax-container">
+    <div class="hero-overlay"></div>
+    <div class="container valign-wrapper" style="height:100%;">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Miami FX Dev Studio — Frontend Xperience Experts</h1>
+        <p>Crafting clean, bold, professional websites that stand out.</p>
+        <a href="contact.html" class="btn-large red waves-effect waves-light">Get Started</a>
+      </div>
+    </div>
+    <div class="parallax">
+      <img class="responsive-img" src="Img/v1016 Background.jpg" alt="Web Design Background" loading="lazy">
+    </div>
+  </div>
+
+  <!-- Welcome -->
+  <section class="section white center" data-aos="fade-up">
+    <div class="container">
+      <h4>Welcome!</h4>
+      <p class="flow-text">
+        At <strong>Miami FX Dev Studio</strong>, we blend <span class="red-text text-darken-1">performance</span> with <span class="blue-grey-text text-darken-3">design</span>.
+        Our websites are <strong>fast</strong>, <strong>beautiful</strong>, and built to <strong>convert</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="section grey lighten-4" data-aos="fade-up">
+    <div class="container">
+      <h4 class="center">What We Do</h4>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center">
+              <i class="material-icons large red-text">brush</i>
+              <h5>Web Design</h5>
+              <p>Pixel-perfect, responsive designs tailored to your brand identity.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center">
+              <i class="material-icons large red-text">shopping_cart</i>
+              <h5>E-Commerce</h5>
+              <p>Fully functional online stores that help you grow and convert sales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center">
+              <i class="material-icons large red-text">dashboard</i>
+              <h5>Admin Dashboards</h5>
+              <p>Beautiful, easy-to-use interfaces for data and user management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Why Choose Us Section -->
+<section class="section grey lighten-4">
+  <div class="container">
+    <h4 class="center">Why Choose Us?</h4>
+    <div class="row">
+      <div class="col s12 m4 center">
+        <i class="material-icons large red-text">speed</i>
+        <h6>Fast Performance</h6>
+        <p>Optimized for speed so your users never wait long.</p>
+      </div>
+      <div class="col s12 m4 center">
+        <i class="material-icons large red-text">devices</i>
+        <h6>Mobile Responsive</h6>
+        <p>Looks great on every device, from phones to desktops.</p>
+      </div>
+      <div class="col s12 m4 center">
+        <i class="material-icons large red-text">code</i>
+        <h6>Clean Code</h6>
+        <p>We build with best practices for scalability and SEO.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section center grey lighten-5" data-aos="fade-up">
+    <div class="container">
+      <h5>Trusted by</h5>
+      <div class="row">
+        <div class="col s4 m2">
+          <img src="Img/luxury-business-logo.jpg" class="responsive-img" alt="Client 1" loading="lazy">
+        </div>
+        <div class="col s4 m2">
+          <img src="Img/creative-barbecue-logo-.avif" class="responsive-img" alt="Client 2" loading="lazy">
+        </div>
+        <div class="col s4 m2">
+          <img src="Img/design-artwork-logo.avif" class="responsive-img" alt="Client 3" loading="lazy">
+        </div>
+        <div class="col s4 m2">
+          <img src="Img/Restaurant-logo.jpg" class="responsive-img" alt="Client 4" loading="lazy">
+        </div>
+        <div class="col s4 m2">
+          <img src="Img/gold-black-logo.jpg" class="responsive-img" alt="Client 5" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white center" data-aos="fade-up">
+   <div class="container">
+      <h5>What Our Clients Say</h5>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img class="responsive-img" src="Img/group-work.jpg" loading="lazy">
+          <blockquote>"Absolutely phenomenal. Fast delivery, clean code!"<br><cite>– Sarah A.</cite></blockquote>
+        </a>
+         <a class="carousel-item" href="#two!"><img class="responsive-img" src="Img/Women-at-work.jpg" loading="lazy">
+          <blockquote>"They made my brand look world-class. Thank you!"<br><cite>– Jamal W.</cite></blockquote>
+        </a>
+         <a class="carousel-item" href="#three!"><img class="responsive-img" src="Img/Female-client.jpg" loading="lazy">
+          <blockquote>"Great service, smooth UX, and responsive devs."<br><cite>– Ada M.</cite></blockquote>
+        </a>
+      </div>
+   </div>
+  </section>
+
+    <section class="section grey lighten-4" data-aos="fade-up">
+  <div class="container">
+    <h5 class="center">Our Process</h5>
+    <div class="row">
+      <div class="col s12 m3 center">
+        <i class="material-icons large red-text">search</i>
+        <h6>1. Discover</h6>
+        <p>We learn about your goals, audience, and brand vision.</p>
+      </div>
+      <div class="col s12 m3 center">
+        <i class="material-icons large red-text">edit</i>
+        <h6>2. Design</h6>
+        <p>We create a clean and bold layout tailored for impact.</p>
+      </div>
+      <div class="col s12 m3 center">
+        <i class="material-icons large red-text">code</i>
+        <h6>3. Develop</h6>
+        <p>Code it clean, fast, and responsive—across all devices.</p>
+      </div>
+      <div class="col s12 m3 center">
+        <i class="material-icons large red-text">launch</i>
+        <h6>4. Launch</h6>
+        <p>Your site goes live, optimized for speed and conversions.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+  <!-- Stats -->
+  <section class="section white center" data-aos="fade-up">
+    <div class="container stats-container">
+      <div class="stat">
+        <h4 class="counter" data-count="120">0</h4>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat">
+        <h4 class="counter" data-count="80">0</h4>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat">
+        <h4 class="counter" data-count="5">0</h4>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" data-aos="fade-up">
+    <div class="container">
+      <h4>Let's Build Something Great Together</h4>
+      <a href="contact.html" class="btn-large white black-text waves-effect waves-dark">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="page-footer blue-grey darken-4">
+  <div class="container">
+    <div class="row">
+      <!-- Brand & Contact Info -->
+      <div class="col l6 s12">
+        <h5 class="white-text">Miami FX Dev Studio</h5>
+        <p class="grey-text text-lighten-4">
+          We craft clean, fast, and responsive websites tailored to your business goals.
+        </p>
+        <p><i class="material-icons tiny">email</i> <a href="https://chukwuebukaenyeribenyem@gmail.com" class="grey-text text-lighten-3">Chukwuebukaenyeribenyem@gmail.com</a></p>
+        <p><i class="material-icons tiny">call</i> <a href="https://wa.me/2347035157216" class="grey-text text-lighten-3">+234 70-3515-7216</a></p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Quick Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="services.html">Services</a></li>
+          <li><a class="grey-text text-lighten-3" href="portfolio.html">Portfolio</a></li>
+          <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+          <li><a class="grey-text text-lighten-3" href="testimonial.html">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom Bar -->
+  <div class="footer-copyright">
+    <div class="container">
+      © 2025 Miami FX Dev Studio. All rights reserved.
+      <span class="right">
+        <a href="https://www.facebook.com/profile.php?id=61577684573612" class="grey-text text-lighten-3"><i class="material-icons">facebook</i></a>
+        <a href="https://www.instagram.com/mavin_saucer?utm_source=qr&igsh=MWQ2aG03Ynh0dHNkdA==" class="grey-text text-lighten-3"><i class="material-icons">instagram</i></a>
+        <a href="#" class="grey-text text-lighten-3"><i class="material-icons">linkedin</i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+      M.Parallax.init(document.querySelectorAll('.parallax'));
+      AOS.init({ duration: 1000, once: true });
+
+      // Animated counters
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const update = () => {
+          const target = +counter.getAttribute('data-count');
+          const count = +counter.innerText;
+          const increment = target / 100;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(update, 30);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        update();
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const elems = document.querySelectorAll('.carousel');
+    M.Carousel.init(elems, { fullWidth: false, indicators: true });
+  });
+  </script>
+</body>
+</html>

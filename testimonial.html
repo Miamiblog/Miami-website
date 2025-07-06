@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Miami Frontend Xperience Dev Studio Experts" />
+  <meta name="description" content="Client feedback and testimonials for Miami FX Dev Studio." />
+  <meta name="keywords" content="Miami FX, client testimonials, feedback, web design reviews, frontend studio" />
+  <meta name="theme-color" content="#270101" />
+  <title>Testimonials |  Miami FX Dev Studio</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('Img/Dark-Red-Background.jpg'); color: #fff; padding-top: 60px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+     header { padding: 60px 20px; background: linear-gradient(90deg, #e53935, #1e88e5); text-align: center; }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .testimonial-section { padding: 3rem 1rem; }
+    .testimonial-card {
+      background-color: #333;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;}
+      .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .carousel .carousel-item {
+      width: 400px;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="blue-grey darken-4">
+    <div class="nav-wrapper container">
+      <a href="#testimonial" class="brand-logo">
+        <img src="Img/Miami-logo.png" alt="Miami FX Logo" style="height: 50px; margin-top: 5px;" />
+      </a>
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="designs.html">Designs</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+      </ul>
+    </div>
+
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="designs.html">Designs</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+    </ul>
+  </nav>
+
+    <header>
+    <h1>Client Testimonials</h1>
+    <p>What our clients say about working with Miami FX</p>
+  </header>
+
+  <section class="testimonial-section container">
+    <div class="carousel center-align">
+      <div class="carousel-item testimonial-card">
+        <h5>Lisa O. – Founder, LuxeRealty</h5>
+        <p>"The UI Miami FX built for our luxury housing brand was sleek, professional, and exactly what we envisioned. Our bounce rate dropped by 40%!"</p>
+        <a href="portfolio.html#real-estate">View Project</a>
+      </div>
+      <div class="carousel-item testimonial-card">
+        <h5>Daniel K. – CEO, ChainFi</h5>
+        <p>"From wireframes to full dashboards, they executed everything flawlessly. Great communication and clean code!"</p>
+        <a href="portfolio.html#crypto-dashboard">View Project</a>
+      </div>
+      <div class="carousel-item testimonial-card">
+        <h5>Rosa M. – Lead Designer, Studio23</h5>
+        <p>"Their e-commerce UI solution streamlined our design-to-code pipeline. A solid frontend partner!"</p>
+        <a href="portfolio.html#ecommerce">View Project</a>
+      </div>
+      <div class="carousel-item testimonial-card">
+        <h5>Jordan A. – Marketing Director, Nova Fashion</h5>
+        <p>"We needed visual impact fast. Miami FX delivered a vibrant fashion storefront that truly pops on mobile and desktop."</p>
+        <a href="portfolio.html#fashion-store">View Project</a>
+      </div>
+    </div>
+  </section>
+
+ 
+
+    <div class="center-align mt-8">
+      <a href="https://wa.me/2347035157216" class="btn-large red accent-4 hoverable waves-effect waves-light">
+        Start Your Project →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 black white-text center-align border-t">
+    <p>📞 WhatsApp: +234 703-515-7216</p>
+    <p>📧 Email: chukwuebukaenyeribenyem@gmail.com</p>
+
+    © 2025 Miami FX Dev Studio Experts. All rights reserved.  
+  </footer>
+
+  <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', () => {
+      M.AutoInit();
+      const carousel = document.querySelector('.carousel');
+      M.Carousel.init(carousel, {
+        fullWidth: false,
+        indicators: true
+      });           
+    });
+  </script>
+</body>
+</html>
