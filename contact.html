@@ -8,149 +8,110 @@
   <meta name="keywords" content="Miami FX, contact, web design, frontend studio, UI/UX, development services" />
   <meta name="theme-color" content="#270101" />
   <title>Contact | Miami FX Dev Studio</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="materialize-v1.0.0/materialize/css/materialize.min.css" rel="stylesheet">
-   <style>
-    header { background: linear-gradient(90deg, #e53935, #1e88e5); padding: 4rem 2rem; text-align: center; color: #000; }
-    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    .contact-section { padding: 3rem 1rem; }
-    .input-field input, .input-field textarea { color: white; }
-    .input-field input::placeholder, .input-field textarea::placeholder { color: #ccc; }
-    .card-panel { background-color: #333; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="black-text" style="background-image: url(Img/Dark-Red-Background.jpg);">
+<body class="bg-[#270101] text-white">
 
- 
-  <nav class="blue-grey darken-4" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-    <div class="nav-wrapper container">
-      <a href="#contact" class="brand-logo">MIAMI FX</a>
-      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="designs.html">Designs</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="testimonial.html">Testimonials</a></li>        
+  <!-- Navbar -->
+  <nav class="bg-gray-900 fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-xl font-bold">MIAMI FX</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="home.html" class="hover:text-red-500">Home</a></li>
+        <li><a href="about.html" class="hover:text-red-500">About</a></li>
+        <li><a href="designs.html" class="hover:text-red-500">Designs</a></li>
+        <li><a href="services.html" class="hover:text-red-500">Services</a></li>
+        <li><a href="portfolio.html" class="hover:text-red-500">Portfolio</a></li>
+        <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+        <li><a href="testimonial.html" class="hover:text-red-500">Testimonials</a></li>
       </ul>
     </div>
-  
-  <ul class="sidenav" id="mobile-menu">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="designs.html">Designs</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="testimonial.html">Testimonials</a></li>
-  </ul>
   </nav>
 
-  <header>
-    <h1>Contact Us</h1>
-    <p>Let’s build something amazing together.</p>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-red-600 to-blue-600 text-black text-center py-20 mt-16">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">Contact Us</h1>
+    <p class="text-lg md:text-xl">Let’s build something amazing together.</p>
   </header>
-  
-  <section class="container contact-section">
-  <div class="row">
-      <form class="col s12 m8" id="contact-form">
-        <div class="row">
-          <div class="input-field col s12 m6">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="name" name="name" type="text" class="validate" required>
-            <label for="name">Name</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <i class="material-icons prefix">email</i>
-            <input id="email" name="email" type="email" class="validate" required>
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix ">message</i>
-            <textarea id="message" name="message" class="materialize-textarea validate" required></textarea>
-            <a href="https://wa.me/2347035157216"><label for="message">Message</label></a>
-          </div>
-        </div>
 
-        <!-- Google reCAPTCHA v2 widget -->
-        <div class="row">
-          <div class="col s12">
-            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-          </div>
-        </div>
-
-        <div class="row center">
-          <button class="btn waves-effect waves-light" type="submit">
-            <a href="https://wa.me/2347035157216">
-            Send Message <i class="material-icons right">send</i>
-          </button>
-          <a href="https://wa.me/2347035157216" target="_blank" class="btn green waves-effect waves-light" style="margin-left:10px;">
-            WhatsApp Us <i class="material-icons right">chat</i>
-          </a>
-        </div>
-      </form>
-    </div>
-  </section> 
-
-  <div>
-    <!-- Embedded Google Map -->
-    <div class="col s12 m4">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Our Location</span>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=PASTE_EMBED_CODE_HERE"
-            width="100%" height="250" frameborder="0"
-            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-          </iframe>
-        </div>
+  <!-- Contact Form & Info -->
+  <section class="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-12">
+    
+    <!-- Form -->
+    <form id="contact-form" class="space-y-6 bg-gray-800 p-6 rounded-lg shadow-lg">
+      <div>
+        <label for="name" class="block mb-1 font-medium">Name</label>
+        <input type="text" id="name" name="name" required
+               class="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Your Name">
       </div>
+      <div>
+        <label for="email" class="block mb-1 font-medium">Email</label>
+        <input type="email" id="email" name="email" required
+               class="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="you@example.com">
+      </div>
+      <div>
+        <label for="message" class="block mb-1 font-medium">Message</label>
+        <textarea id="message" name="message" required
+                  class="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500" rows="5" placeholder="Your message..."></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-4">
+        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded flex items-center gap-2">
+          Send Message
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+        <a href="https://wa.me/2347035157216" target="_blank"
+           class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded flex items-center gap-2">
+           WhatsApp Us
+           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+             <path d="M21.5 2.5a11.949 11.949 0 00-19.9 15.5L2 22l4-1 1.5-1.5A11.949 11.949 0 0021.5 2.5zM17.2 15.7c-.2.6-1.1 1.1-1.6 1.2-.4.1-.9.1-2-.4-1-.4-1.7-.5-2.6-1.1-.9-.5-1.5-1.2-1.7-1.6-.2-.4-.2-.8 0-1.1.2-.3.4-.5.6-.8.2-.3.2-.5 0-.9-.2-.3-1-.9-1.3-1.2-.3-.3-.6-.4-.8-.5-.2 0-.5-.1-.8-.1s-.7.1-1 .3c-.3.2-.5.6-.6 1-.1.3 0 .6.1.9s.7 1.7 1.6 2.8c.9 1 3.1 4.8 7.6 6.5 1 .3 1.8.5 2.4.5.8 0 1.7-.3 2.3-1 .6-.6 1-1.3 1.1-2 .1-.6-.3-1.2-.5-1.5z"/>
+           </svg>
+        </a>
+      </div>
+    </form>
+
+    <!-- Map -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=PASTE_EMBED_CODE_HERE"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-  </div>
 
+  </section>
 
+  <!-- Scripts -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const data = new FormData(form);
 
- <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  M.AutoInit();
-  
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-    
-    if (!form.checkValidity()) {
-      M.toast({ html: 'Please fill all fields correctly.', classes: 'red' });
-      return;
-    }
-    
-    const data = new FormData(form);
-    try {
-      const res = await fetch('https://formspree.io/f/yourFormID', {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-      
-      if (res.ok) {
-        M.toast({ html: '✔️ Message sent!', classes: 'green' });
-        form.reset();
-        grecaptcha.reset();
-      } else {
-        const { error } = await res.json();
-        M.toast({ html: error || 'Submission failed, please try again.', classes: 'red' });
+      try {
+        const res = await fetch('https://formspree.io/f/yourFormID', {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          alert('✔️ Message sent!');
+          form.reset();
+          grecaptcha.reset();
+        } else {
+          const { error } = await res.json();
+          alert(error || 'Submission failed. Please try again.');
+        }
+      } catch {
+        alert('Network error. Try again later.');
       }
-    } catch {
-      M.toast({ html: 'Network error. Try again later.', classes: 'red' });
-    }
-  });
-});
-</script>
+    });
+  </script>
 
 </body>
 </html>
+
